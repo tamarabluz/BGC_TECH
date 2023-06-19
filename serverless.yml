@@ -1,0 +1,16 @@
+service: my-pokemon-api
+frameworkVersion: "3.32.2"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+  stage: dev
+
+functions:
+  pokemonInfo:
+    handler: index.scrapePokemonInfo
+    events:
+      - httpApi:
+          path: /pokemon-info
+          method: get
