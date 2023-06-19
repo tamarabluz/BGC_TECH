@@ -31,6 +31,20 @@ const scrapePokemonInfo = async (pokemonName) => {
       });
 
       console.log('Number:', number);
+
+      const types = await page.evaluate(() => {
+        const typeElements = document.querySelectorAll('td.modoclaroescuro table tbody tr td a font');
+        const types = [];
+      
+        typeElements.forEach((typeElement) => {
+          const type = typeElement.textContent.trim();
+          types.push(type);
+        });
+      
+        return types;
+      });
+      
+      console.log('Tipos:', types);
       
       
 
@@ -43,6 +57,7 @@ const scrapePokemonInfo = async (pokemonName) => {
     result = {
       name: pokemonName.pokemonName,
       number,
+      types,
     
     };
   } catch (error) {
