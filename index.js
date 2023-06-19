@@ -59,6 +59,24 @@ const scrapePokemonInfo = async (pokemonName) => {
       });
       
       console.log('Height:', height);
+
+    const abilities = await page.evaluate(() => {
+        const abilitiesElement = document.querySelector('td.modoclaroescuro[colspan="2"][width="100%"]');
+        const abilities = [];
+      
+        if (abilitiesElement) {
+          const abilityElements = abilitiesElement.querySelectorAll('a, span.new');
+      
+          abilityElements.forEach((abilityElement) => {
+            const abilityText = abilityElement.textContent.trim();
+            abilities.push(abilityText);
+          });
+        }
+      
+        return abilities;
+      });
+      
+      console.log('Abilities:', abilities);
     
       
 
@@ -71,6 +89,7 @@ const scrapePokemonInfo = async (pokemonName) => {
       types,
       category,
       height,
+      abilities,
     
     };
   } catch (error) {
