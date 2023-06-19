@@ -4,7 +4,7 @@
 <h1 align="center">Projeto Desenvolvido para BGC BRASIL </h1>
 <p align="center"> https://www.bgcbrasil.com.br/ <p/>
 
-<p align="center">Repositório criado para BGC BRASIL Web Scraping da pagina da (https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional) utilizando Puppeteer, Lambda aws e Serverless.</p>
+<p align="center">Repositório criado para BGC BRASIL Web Scraping da pagina da (https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional) utilizando Puppeteer, AWS-Lambda e Serverless.</p>
 
 
 <h3 align="center">Status do Projeto</h3>
