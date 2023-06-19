@@ -4,7 +4,7 @@
 <h1 align="center">Projeto Desenvolvido para BGC BRASIL </h1>
 <p align="center"> https://www.bgcbrasil.com.br/ <p/>
 
-<p align="center">Repositório criado para Dti Digital aplicação web com Backend, frontend e mobile utilizando Kotlin, Spring Boot e React.</p>
+<p align="center">Repositório criado para BGC BRASIL Web Scraping da pagina da (https://pokemon.fandom.com/pt-br/wiki/Pok%C3%A9dex_Nacional) utilizando Puppeteer, Lambda aws e Serverless.</p>
 
 
 <h3 align="center">Status do Projeto</h3>
@@ -58,7 +58,7 @@
 </table>
 
 <h3 align="center" >Configurando a aplicação para poder utilizar em sua IDE</h3>
-1° - Após clonar a aplicação: <b>git clone https://github.com/tamarabluz/BGC-TECH.git</b>
+1° - Após clonar a aplicação: <b>git clone https://github.com/tamarabluz/BGC_TECH.git</b>
 <br>
 <br>2° - Abra o terminal no diretório do projeto e rode: npm install.
 <br>
