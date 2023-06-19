@@ -52,6 +52,13 @@ const scrapePokemonInfo = async (pokemonName) => {
       });
   
       console.log('Category:', category);
+
+    const height = await page.evaluate(() => {
+        const heightElement = document.querySelector('td.modoclaroescuro[colspan="1"][width="50%"]');
+        return heightElement ? heightElement.textContent.trim() : '';
+      });
+      
+      console.log('Height:', height);
     
       
 
@@ -63,6 +70,7 @@ const scrapePokemonInfo = async (pokemonName) => {
       number,
       types,
       category,
+      height,
     
     };
   } catch (error) {
